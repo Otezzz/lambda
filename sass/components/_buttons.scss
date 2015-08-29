@@ -1,0 +1,19 @@
+.header-btn {
+    width: 225px;
+    height: 55px;
+    font-family: $font-base;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: $white-text-h1;
+    border: 1px solid;
+}
+.book-table {
+    margin-right: 15px;
+    background: $header-btn-blk;
+    border-color: #000;
+}
+.set-menu {
+    margin-left: 15px;
+    background: $header-btn-wht;
+    border-color: #fff;
+}

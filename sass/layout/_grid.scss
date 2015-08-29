@@ -1,6 +1,16 @@
 .wrapper {
-    
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0;
 }
 .container {
-    
+    position: relative;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0;
+}
+.clearfix {
+    content:"";
+    display:table;
+    clear:both;
 }

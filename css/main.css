@@ -1,3 +1,108 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #5d5d5d; }
+
+h1 {
+  margin-top: 135px;
+  font-family: "Yeseva One", cursive;
+  font-size: 90px;
+  line-height: 117px;
+  color: #f5f4f4; }
+
+h2 {
+  font-family: "Yeseva One", cursive;
+  font-size: 36px;
+  line-height: 46px; }
+
+h3 {
+  font-family: "Yeseva One", cursive;
+  font-size: 21px;
+  line-height: 27px; }
+
+.h2-gold,
+.h3-gold {
+  color: #cc9900; }
+
+.wrapper {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0; }
+
+.container {
+  position: relative;
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0; }
+
+.clearfix {
+  content: "";
+  display: table;
+  clear: both; }
+
+.main-header {
+  min-height: 750px;
+  text-align: center;
+  background: url("../img/header-bg.png") no-repeat; }
+
+.logo {
+  position: absolute;
+  display: block;
+  width: 156px;
+  height: 92px;
+  outline: 1px solid; }
+
+.header-navigation ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0; }
+  .header-navigation ul li {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 40px 25px 10px 25px;
+    border-top: 3px solid transparent; }
+    .header-navigation ul li:hover {
+      border-top: 3px solid rgba(255, 255, 255, 0.7); }
+    .header-navigation ul li a {
+      font-family: "Gentium Book Basic", "Times New Roman" serif;
+      font-weight: bold;
+      font-size: 16px;
+      text-decoration: none;
+      color: #fff; }
+
+h1:after {
+  content: "";
+  display: block;
+  width: 232px;
+  height: 43px;
+  margin: 0 auto;
+  margin-top: 40px;
+  background: url("../img/decor-h1.png") no-repeat; }
+
+.header-btn {
+  width: 225px;
+  height: 55px;
+  font-family: "Lato", "Arial", sans-serif;
+  text-transform: uppercase;
+  font-size: 18px;
+  color: #f5f4f4;
+  border: 1px solid; }
+
+.book-table {
+  margin-right: 15px;
+  background: rgba(0, 0, 0, 0.6);
+  border-color: #000; }
+
+.set-menu {
+  margin-left: 15px;
+  background: rgba(255, 255, 255, 0.6);
+  border-color: #fff; }
+
 @media all and (max-width: 1024px) {
   .container.header {
     background: url("../img/iphone-5.png") no-repeat 280px 385px; }

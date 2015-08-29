@@ -1,0 +1,46 @@
+.main-header {
+    min-height: 750px;
+    text-align: center;
+    background: url("../img/header-bg.png") no-repeat;
+}
+.logo {
+    position: absolute;
+    display: block;
+    width: 156px;
+    height: 92px;
+    outline: 1px solid;
+}
+.header-navigation {
+    ul {
+        @include list-style-reset;
+        font-size: 0;
+        
+        li {
+            display: inline-block;
+            vertical-align: middle;
+            padding: 40px 25px 10px 25px;
+            border-top: 3px solid transparent;
+            
+            &:hover {
+                border-top: 3px solid rgba(255, 255, 255, .7); 
+            }
+            
+            a {
+                font-family: $font-header-menu;
+                font-weight: bold;
+                font-size: $font-size-base;
+                text-decoration: none;
+                color: $white-text;
+            }
+        }
+    }
+}
+h1:after {
+    content: "";
+    display: block;
+    width: 232px;
+    height: 43px;
+    margin: 0 auto;
+    margin-top: 40px;
+    background: url("../img/decor-h1.png") no-repeat;
+}
