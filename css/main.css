@@ -103,6 +103,9 @@ h1:after {
   background: rgba(255, 255, 255, 0.6);
   border-color: #fff; }
 
+.section1 {
+  background: #000; }
+
 @media all and (max-width: 1024px) {
   .container.header {
     background: url("../img/iphone-5.png") no-repeat 280px 385px; }
