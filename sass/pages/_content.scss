@@ -1,3 +1,12 @@
 .section1 {
-    background: #000;
+    min-height: 710px;
+    background: url("../img/section1-pattern2.png"),
+                url(../img/section1-bg-shadow.png) no-repeat;
+}
+.about-food {
+    width: 40%;
+    
+    h2 {
+        margin-top: 0;
+    }
 }

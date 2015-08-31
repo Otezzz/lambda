@@ -39,6 +39,11 @@ h3 {
   margin: 0 auto;
   padding: 0; }
 
+.container-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; }
+
 .clearfix {
   content: "";
   display: table;
@@ -104,7 +109,13 @@ h1:after {
   border-color: #fff; }
 
 .section1 {
-  background: #000; }
+  min-height: 710px;
+  background: url("../img/section1-pattern2.png"), url(../img/section1-bg-shadow.png) no-repeat; }
+
+.about-food {
+  width: 40%; }
+  .about-food h2 {
+    margin-top: 0; }
 
 @media all and (max-width: 1024px) {
   .container.header {
