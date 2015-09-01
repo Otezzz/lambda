@@ -15,6 +15,7 @@ h1 {
   color: #f5f4f4; }
 
 h2 {
+  margin-top: 0;
   font-family: "Yeseva One", cursive;
   font-size: 36px;
   line-height: 46px; }
@@ -113,9 +114,52 @@ h1:after {
   background: url("../img/section1-pattern2.png"), url(../img/section1-bg-shadow.png) no-repeat; }
 
 .about-food {
-  width: 40%; }
-  .about-food h2 {
-    margin-top: 0; }
+  width: 37%;
+  padding: 0 10px;
+  margin-top: 100px;
+  margin-left: 40px;
+  text-align: center; }
+
+.chef-photo {
+  position: relative;
+  margin-top: 50px; }
+  .chef-photo img {
+    position: absolute;
+    left: 135px; }
+
+.meal-photo {
+  margin-top: 50px;
+  margin-right: 40px; }
+
+.h2-gold:after,
+.h2-white:after {
+  content: "";
+  display: block;
+  width: 247px;
+  height: 24px;
+  margin: 0 auto;
+  margin-top: 20px; }
+
+.h3-white:after {
+  content: "";
+  display: block;
+  width: 199px;
+  height: 19px;
+  margin: 0 auto;
+  margin-top: 40px; }
+
+.h2-gold:after {
+  background: url("../img/decor-h2-gold.png") no-repeat; }
+
+.h2-white:after {
+  background: url("../img/decor-h2.png") no-repeat; }
+
+.h3-white:after {
+  background: url("../img/decor-h3.png") no-repeat; }
+
+.section2 {
+  min-height: 758px;
+  background: url("../img/section2-bg.png") no-repeat; }
 
 @media all and (max-width: 1024px) {
   .container.header {
