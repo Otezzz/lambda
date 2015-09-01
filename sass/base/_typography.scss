@@ -13,7 +13,7 @@ h1 {
     font-size: $font-size-h1;
     line-height: $line-height-h1;
     color: $white-text-h1;
-    text-shadow: 2px 0 2px 2px black;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, .5);
 }
 h2 {
     margin-top: 0;
@@ -21,7 +21,8 @@ h2 {
     font-size: $font-size-h2;
     line-height: $line-height-h2;
 }
-h3 {
+h3,
+.meals-price {
     font-family: $font-headers;
     font-size: $font-size-h3;
     line-height: $line-height-h3;
@@ -29,4 +30,11 @@ h3 {
 .h2-gold,
 .h3-gold {
     color: $gold-text;
+}
+.h2-white {
+    color: $white-text-h1;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, .5);
+}
+.white {
+    color: $light-text;
 }

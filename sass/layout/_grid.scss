@@ -1,5 +1,10 @@
-.wrapper {
+.body-shadow {
     max-width: 1600px;
+    box-shadow: 0 0 15px 10px rgba(0,0,0,.2);
+    margin: 0 auto;
+    padding: 0;
+}
+.wrapper {
     margin: 0 auto;
     padding: 0;
 }
@@ -13,6 +18,23 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    flex-wrap: wrap;
+}
+.container-flex-end {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.container-flex-around {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.container-flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .clearfix {
     content:"";
