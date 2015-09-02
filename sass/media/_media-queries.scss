@@ -1,119 +1,127 @@
-@media all and (max-width: 1024px) {
-    .container.header {
-        background: url("../img/iphone-5.png") no-repeat 280px 385px;
+@media all and (max-width: 1108px) {
+    h1 {
+        margin-top: 40px;
+        font-size: 60px;
     }
-    .main-header .slogan {
-        float: left;
-        width: 50%;
-        padding-left: 0;
-        font-size: 25px;
+    .feedback {
+        
+        &-block {
+            width: 50%;
+        }
+        .container-flex-start {
+            justify-content: center;
+        }
     }
-    .main-header .title {
-        left: 0;
+    .food-photo1,
+    .food-photo2 {
+        position: absolute;
+        opacity: 0.6;
     }
-    .container .logo {
-        left: 0;
+    .food-photo1 {
+        left: 12px;
     }
-    .enter {
-        right: 0;
+    .food-photo2 {
+        right: -90px;
     }
-    .download {
+}
+@media all and (max-width: 925px) {
+    .section1 {
+        
+        .container-flex {
+            justify-content: center;
+        }
+    }
+    .section1,
+    .feedback {
+        background: rgba(0,0,0,.1) url("../img/section1-pattern2.png");
+    }
+    .meal-menu {
+        background: rgba(0,0,0,.1) url("../img/section2-pattern2.png")
+    }
+    .meal-photo {
+        position: absolute;
+        top: 172px;
+        left: 237px;
+        opacity: 0.3;
+    }
+    .chef-photo {
+        display: none;
+    }
+    
+    .about-ingredients {
+        position: absolute;
+        left: 50%;
+        margin-left: -285px;
+    }
+    
+    .main-footer {
+        
+        .container-flex-start {
+            flex-wrap: nowrap; 
+            
+            .h3-white:after {
+                display: none;
+            }
+        }
+    }
+}
+@media all and (max-width: 780px) {
+    .header-navigation {
+        margin-left: 200px;
+        
+        ul {
+        
+            li {
+                padding: 40px 10px 10px 10px;
+            }
+        }
+    }
+    
+    .feedback-form {
+        
+        formgroup {
+            width: 100%;
+        }
+        
+            input {
+                width: 100%;
+            }
+    }
+}
+@media all and (max-width: 593px) {
+    .about-us,
+    .opening,
+    .location {
+        display: none;
+    }
+    .copyrights {
+        display: block;
+    }
+    
+    h1 {
+        font-size: 37px;
+        line-height: 60px;
+    }
+    
+    .section1 {
+        margin-left: 0;
+    }
+    
+    .about-food {
+        width: 73%;
+    }
+}
+@media all and (max-width: 499px) {
+    .header-btn {
+        margin-bottom: 15px;
+    }
+    
+    .book-table {
         margin-right: 0;
     }
-    .main-menu {
-        margin-left: 220px;
-        margin-top: 150px;
-    }
-    .close-btn {
-        right: 7px;
-    }
-    .content-wrapper {
-        .container {
-            background: url("../img/ipad.png") no-repeat 550px 155px;
-        }
-    }
-    
-    .container.main {
-        background: url("../img/devices_02.png") no-repeat 50px 350px;
-    }
-    .container.main .content-article2 {
-        float: none;
-        width: 100%;
-    }
-}
-
-@media all and (max-width: 438px) {
-    .container.header {
-        text-align: center;
-        background: url("../img/iphone-5.png") no-repeat 45px 385px;
-    }
-    .main-header .slogan {
-        float: none;
-        width: 100%;
-        text-align: center;
-    }
-    .download {
-        display: inline-block;
-        float: none;
-        margin-top: 90px;
-    }
-    .main-menu {
-        width: 100%;
+    .set-menu {
         margin-left: 0;
-        padding-left: 36%;
-        
-        &-btn {
-            font-size: 0;
-            margin-bottom: 30px;
-        }
-        
-        &-btn::before {
-            transition: 0.5s;
-        }
-        &-btn:hover::before {
-            transform: scale(1.2);
-            background-color: lighten($blue, 25%);
-        }
-    }
-    .content-wrapper .container {
-        margin-left: 60px;
-        padding-top: 10px;
-    }
-    .container.main {
-        background: url("../img/devices_02.png") no-repeat 0px 450px;
-    }
-    
-    .social-block {
-        padding-left: 30px;
-        
-        li {
-            padding-bottom: 10px;    
-        }
-    }
-    .footer-form {
-        width: 250px;
-    }
-    .footer-form label {
-        display: block;
-        margin-bottom: 20px;
-    }
-    .icon-search {
-        top: 53px;
-    }
-    .btn-up {
-        top: 39px;
-        right: 35px;
-    }   
-}
-
-@media all and (max-width: 375px) {
-    .container.header {
-        background: url("../img/iphone-5.png") no-repeat 30px 385px;
-    }
-    .download {
-        margin-top: 60px;
     }
 }
-
 
 

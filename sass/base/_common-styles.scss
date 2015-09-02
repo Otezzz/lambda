@@ -1,0 +1,27 @@
+.h2-gold:after,
+.h2-white:after {
+    content: "";
+    display: block;
+    width: 247px;
+    height: 24px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.h3-white:after {
+    content: "";
+    display: block;
+    width: 199px;
+    height: 19px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.h2-gold:after {
+    background: url("../img/decor-h2-gold.png") no-repeat;
+}
+.h2-white:after {
+    background: url("../img/decor-h2.png") no-repeat;
+}
+.h3-white:after {
+    background: url("../img/decor-h3.png") no-repeat;
+}

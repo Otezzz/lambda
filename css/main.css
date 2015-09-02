@@ -38,8 +38,87 @@ h3,
 .white {
   color: #c7c7c7; }
 
-.main-footer {
-  background-color: #191919; }
+.h2-gold:after,
+.h2-white:after {
+  content: "";
+  display: block;
+  width: 247px;
+  height: 24px;
+  margin: 0 auto;
+  margin-top: 20px; }
+
+.h3-white:after {
+  content: "";
+  display: block;
+  width: 199px;
+  height: 19px;
+  margin: 0 auto;
+  margin-top: 20px; }
+
+.h2-gold:after {
+  background: url("../img/decor-h2-gold.png") no-repeat; }
+
+.h2-white:after {
+  background: url("../img/decor-h2.png") no-repeat; }
+
+.h3-white:after {
+  background: url("../img/decor-h3.png") no-repeat; }
+
+.wrapper.main-footer {
+  padding: 60px 0;
+  background-color: #191919;
+  color: #c7c7c7; }
+  .wrapper.main-footer h3 {
+    margin-top: 0; }
+
+.about-us,
+.opening,
+.location {
+  padding: 0 10px;
+  text-align: center; }
+
+.about-us {
+  width: 30%;
+  margin-right: 10%; }
+
+.opening {
+  width: 20%;
+  margin-right: 13%; }
+
+.location {
+  width: 20%; }
+
+.copyrights {
+  display: none;
+  width: 100%;
+  text-align: center;
+  font-style: italic; }
+
+.feedback-form {
+  font-family: "Open Sans", "Arial", sans-serif; }
+  .feedback-form formgroup {
+    margin-bottom: 20px; }
+  .feedback-form label {
+    display: block;
+    width: 200px;
+    margin-bottom: 5px;
+    text-align: left;
+    font-weight: bold;
+    font-size: 14px;
+    color: #cc9900; }
+  .feedback-form input {
+    width: 185px;
+    padding: 7px 5px 7px 10px;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 600;
+    outline: none;
+    border: 1px solid #c8c6c6; }
+    .feedback-form input:active {
+      outline: none; }
+    .feedback-form input:focus {
+      outline: none;
+      border-color: #cc9900; }
 
 .body-shadow {
   max-width: 1600px;
@@ -60,6 +139,12 @@ h3,
 .container-flex {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap; }
+
+.container-flex-start {
+  display: flex;
+  justify-content: flex-start;
   align-items: flex-start;
   flex-wrap: wrap; }
 
@@ -91,10 +176,10 @@ h3,
 
 .logo {
   position: absolute;
+  top: 10px;
   display: block;
   width: 156px;
-  height: 92px;
-  outline: 1px solid; }
+  height: 92px; }
 
 .header-navigation ul {
   margin: 0;
@@ -131,17 +216,40 @@ h1:after {
   text-transform: uppercase;
   font-size: 18px;
   color: #f5f4f4;
-  border: 1px solid; }
+  border: 1px solid;
+  outline: none;
+  transition: transform 0.3s; }
+  .header-btn:active {
+    transform: scale(0.9); }
 
 .book-table {
   margin-right: 15px;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.5);
   border-color: #000; }
+  .book-table:hover {
+    background: rgba(0, 0, 0, 0.7); }
 
 .set-menu {
   margin-left: 15px;
-  background: rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.5);
   border-color: #fff; }
+  .set-menu:hover {
+    background: rgba(255, 255, 255, 0.7); }
+
+.feedback-btn {
+  width: 200px;
+  height: 37px;
+  margin: 0 auto;
+  margin-top: 15px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 16px;
+  color: #f5f4f4;
+  background: #c9a131;
+  border: none;
+  outline: none;
+  transition: transform 0.3s; }
+  .feedback-btn:active {
+    transform: scale(0.9); }
 
 /* Секция 1 "О блюдах" */
 .section1 {
@@ -157,40 +265,16 @@ h1:after {
 
 .chef-photo {
   position: relative;
+  min-height: 170px;
   margin-top: 50px; }
   .chef-photo img {
     position: absolute;
     left: 135px; }
 
 .meal-photo {
+  width: 52%;
   margin-top: 50px;
   margin-right: 40px; }
-
-.h2-gold:after,
-.h2-white:after {
-  content: "";
-  display: block;
-  width: 247px;
-  height: 24px;
-  margin: 0 auto;
-  margin-top: 20px; }
-
-.h3-white:after {
-  content: "";
-  display: block;
-  width: 199px;
-  height: 19px;
-  margin: 0 auto;
-  margin-top: 40px; }
-
-.h2-gold:after {
-  background: url("../img/decor-h2-gold.png") no-repeat; }
-
-.h2-white:after {
-  background: url("../img/decor-h2.png") no-repeat; }
-
-.h3-white:after {
-  background: url("../img/decor-h3.png") no-repeat; }
 
 /* Секция 2 "Ингридиенты" */
 .section2 {
@@ -273,114 +357,114 @@ h1:after {
 
 /*  */
 .feedback {
-  min-height: 610px;
+  min-height: 580px;
   padding-top: 100px;
+  padding-bottom: 30px;
   background: url("../img/section1-pattern2.png"), url("../img/feedback-bg-shadow.png") no-repeat; }
+
+.food-photo1 {
+  margin-right: 30px; }
+
+.food-photo2 {
+  margin-right: 100px; }
 
 .food-photo1,
 .food-photo2 {
-  width: 23%; }
+  width: 23%;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 10px 5px 10px 2px rgba(0, 0, 0, 0.4); }
 
 .feedback-block {
-  width: 38%;
+  width: 37%;
+  padding: 0 15px;
   text-align: center; }
 
-@media all and (max-width: 1024px) {
-  .container.header {
-    background: url("../img/iphone-5.png") no-repeat 280px 385px; }
+@media all and (max-width: 1108px) {
+  h1 {
+    margin-top: 40px;
+    font-size: 60px; }
 
-  .main-header .slogan {
-    float: left;
-    width: 50%;
-    padding-left: 0;
-    font-size: 25px; }
+  .feedback-block {
+    width: 50%; }
+  .feedback .container-flex-start {
+    justify-content: center; }
 
-  .main-header .title {
-    left: 0; }
+  .food-photo1,
+  .food-photo2 {
+    position: absolute;
+    opacity: 0.6; }
 
-  .container .logo {
-    left: 0; }
+  .food-photo1 {
+    left: 12px; }
 
-  .enter {
-    right: 0; }
+  .food-photo2 {
+    right: -90px; } }
+@media all and (max-width: 925px) {
+  .section1 .container-flex {
+    justify-content: center; }
 
-  .download {
+  .section1,
+  .feedback {
+    background: rgba(0, 0, 0, 0.1) url("../img/section1-pattern2.png"); }
+
+  .meal-menu {
+    background: rgba(0, 0, 0, 0.1) url("../img/section2-pattern2.png"); }
+
+  .meal-photo {
+    position: absolute;
+    top: 172px;
+    left: 237px;
+    opacity: 0.3; }
+
+  .chef-photo {
+    display: none; }
+
+  .about-ingredients {
+    position: absolute;
+    left: 50%;
+    margin-left: -285px; }
+
+  .main-footer .container-flex-start {
+    flex-wrap: nowrap; }
+    .main-footer .container-flex-start .h3-white:after {
+      display: none; } }
+@media all and (max-width: 780px) {
+  .header-navigation {
+    margin-left: 200px; }
+    .header-navigation ul li {
+      padding: 40px 10px 10px 10px; }
+
+  .feedback-form formgroup {
+    width: 100%; }
+  .feedback-form input {
+    width: 100%; } }
+@media all and (max-width: 593px) {
+  .about-us,
+  .opening,
+  .location {
+    display: none; }
+
+  .copyrights {
+    display: block; }
+
+  h1 {
+    font-size: 37px;
+    line-height: 60px; }
+
+  .section1 {
+    margin-left: 0; }
+
+  .about-food {
+    width: 73%; } }
+@media all and (max-width: 499px) {
+  .header-btn {
+    margin-bottom: 15px; }
+
+  .book-table {
     margin-right: 0; }
 
-  .main-menu {
-    margin-left: 220px;
-    margin-top: 150px; }
-
-  .close-btn {
-    right: 7px; }
-
-  .content-wrapper .container {
-    background: url("../img/ipad.png") no-repeat 550px 155px; }
-
-  .container.main {
-    background: url("../img/devices_02.png") no-repeat 50px 350px; }
-
-  .container.main .content-article2 {
-    float: none;
-    width: 100%; } }
-@media all and (max-width: 438px) {
-  .container.header {
-    text-align: center;
-    background: url("../img/iphone-5.png") no-repeat 45px 385px; }
-
-  .main-header .slogan {
-    float: none;
-    width: 100%;
-    text-align: center; }
-
-  .download {
-    display: inline-block;
-    float: none;
-    margin-top: 90px; }
-
-  .main-menu {
-    width: 100%;
-    margin-left: 0;
-    padding-left: 36%; }
-    .main-menu-btn {
-      font-size: 0;
-      margin-bottom: 30px; }
-    .main-menu-btn::before {
-      transition: 0.5s; }
-    .main-menu-btn:hover::before {
-      transform: scale(1.2);
-      background-color: #b9def2; }
-
-  .content-wrapper .container {
-    margin-left: 60px;
-    padding-top: 10px; }
-
-  .container.main {
-    background: url("../img/devices_02.png") no-repeat 0px 450px; }
-
-  .social-block {
-    padding-left: 30px; }
-    .social-block li {
-      padding-bottom: 10px; }
-
-  .footer-form {
-    width: 250px; }
-
-  .footer-form label {
-    display: block;
-    margin-bottom: 20px; }
-
-  .icon-search {
-    top: 53px; }
-
-  .btn-up {
-    top: 39px;
-    right: 35px; } }
-@media all and (max-width: 375px) {
-  .container.header {
-    background: url("../img/iphone-5.png") no-repeat 30px 385px; }
-
-  .download {
-    margin-top: 60px; } }
+  .set-menu {
+    margin-left: 0; } }
 
 /*# sourceMappingURL=main.css.map */

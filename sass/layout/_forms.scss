@@ -1,0 +1,36 @@
+.feedback-form {
+    font-family: $font-secondary;
+    
+    formgroup {
+        margin-bottom: 20px;
+    }
+    
+    label {
+        display: block;
+        width: 200px;
+        margin-bottom: 5px;
+        text-align: left;
+        font-weight: bold;
+        font-size: 14px;
+        color: $gold-text;
+    }
+    
+    input {
+        width: 185px;
+        padding: 7px 5px 7px 10px;
+        font-size: 16px;
+        font-style: italic;
+        font-weight: 600;
+        outline: none;
+        border: 1px solid #c8c6c6;
+        
+        &:active {
+            outline: none;
+        }
+        
+        &:focus {
+            outline: none;
+            border-color: $gold-text;
+        }
+    }
+}

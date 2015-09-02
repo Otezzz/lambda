@@ -1,3 +1,32 @@
-.main-footer {
+.wrapper.main-footer {
+    padding: 60px 0;
     background-color: #191919;
+    color: $light-text;
+    
+    h3 {
+        margin-top: 0;
+    }
+}
+.about-us,
+.opening,
+.location {
+    padding: 0 10px;
+    text-align: center;
+}
+.about-us {
+    width: 30%;
+    margin-right: 10%;
+}
+.opening {
+    width: 20%;
+    margin-right: 13%;
+}
+.location {
+    width: 20%;
+}
+.copyrights {
+    display: none;
+    width: 100%;
+    text-align: center;
+    font-style: italic;
 }

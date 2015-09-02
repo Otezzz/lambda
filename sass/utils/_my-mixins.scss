@@ -23,3 +23,37 @@
 	top: $top;
 	left: $left;
 }
+@mixin clearfix {
+    content:"";
+    display:table;
+    clear:both;
+}
+@mixin flex-row-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+@mixin flex-row-start {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+@mixin flex-row-end {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+@mixin flex-row-around {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

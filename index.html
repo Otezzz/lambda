@@ -7,20 +7,21 @@
         <link href='https://fonts.googleapis.com/css?family=Yeseva+One|Gentium+Book+Basic:400,700|Lato:400,700|Open+Sans' rel='stylesheet' type='text/css'>
         <link href="css/normalize.css" type="text/css" rel="stylesheet">
         <link href="css/main.css" type="text/css" rel="stylesheet">
+        <title>Lambda</title>
     </head>
     <body>
         <div class="body-shadow">
-            <header class="wrapper main-header">
+            <header class="wrapper main-header" id="home">
                 <div class="container">
                     <a href="" class="logo"><img src="img/logo.png" alt="logo"></a>
-                    <nav class="header-navigation">
+                    <nav class="header-navigation" id="main-menu">
                         <ul>
-                            <li><a href="">Home</a></li>
-                            <li><a href="">About</a></li>
-                            <li><a href="">Ingridients</a></li>
-                            <li><a href="">Menu</a></li>
-                            <li><a href="">Reviews</a></li>
-                            <li><a href="">Reservations</a></li>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#ingr">Ingridients</a></li>
+                            <li><a href="#menu">Menu</a></li>
+                            <li><a href="#reviews">Reviews</a></li>
+                            <li><a href="#reserv">Reservations</a></li>
                         </ul>
                     </nav>
                     <div class="header-social-block">
@@ -35,7 +36,7 @@
             </header>
 
             <main class="main-content">
-                <div class="wrapper section1">
+                <div class="wrapper section1" id="about">
                     <div class="container container-flex">
                         <article class="about-food">
                             <h2 class="h2-gold">Just the right food</h2>
@@ -46,7 +47,7 @@
                     </div>
                 </div>
 
-                <div class="wrapper section2">
+                <div class="wrapper section2" id="ingr">
                     <div class="container container-flex-end">
                         <article class="about-ingredients">
                             <h2 class="h2-white">Fine ingredients</h2>
@@ -60,7 +61,7 @@
                     </div>
                 </div> 
 
-                <div class="wrapper meal-menu">
+                <div class="wrapper meal-menu" id="menu">
                     <div class="container container-flex-around">
                         <div class="menu-box">
                             <h2 class="h2-gold">Appetisers</h2>
@@ -143,7 +144,7 @@
                     </div>
                 </div>
 
-                <div class="wrapper reviews">
+                <div class="wrapper reviews" id="reviews">
                     <div class="container container-flex-center">
                         <div class="guest-reviews">
                             <h2 class="h2-white">Guest Reviews</h2>
@@ -154,22 +155,31 @@
                     </div>
                 </div>
 
-                <div class="wrapper feedback">
-                    <div class="container container-flex">
+                <div class="wrapper feedback" id="reserv">
+                    <div class="container container-flex-start">
                         <div class="food-photo1"><img src="img/feedback-photo-1.png" alt="meal photo" width="100%" height="auto"></div>
                         <div class="food-photo2"><img src="img/feedback-photo-2.png" alt="meal photo" width="100%" height="auto"></div>
                         <div class="feedback-block">
                             <h2 class="h2-gold">Just the right food</h2>
-                            <p>If you've been to one of our restaurants, you've seen - and tasted - what keeps our customers coming back for more. Perfect materials and freshly backed food, delicious Lambda cakes, muffins, and gourmet coffees make us hard to resist! Stop in today and check us out! Perfect materials and freshly backed food.</p>
-                            <form action="" class="feedback-form">
-                                <label for="form-name">Name</label>
-                                <input type="text" name="name" id="form-name" placeholder="your name *" required>
-                                <label for="">Email</label>
-                                <input type="email" name="email" id="form-email" placeholder="your email *" required>
-                                <label for="form-date">Date</label>
-                                <input type="text" name="date" id="form-date" placeholder="date *" required>
-                                <label for="form-number">Party number</label>
-                                <input type="text" name="number" id="form-number" placeholder="party number">
+                            <p>If you've been to one of our restaurants, you've seen - and tasted - what keeps our customers coming back for more.</p>
+                            <p>Perfect materials and freshly backed food, delicious Lambda cakes, muffins, and gourmet coffees make us hard to resist! Stop in today and check us out! Perfect materials and freshly backed food.</p>
+                            <form action="echo" method="post" class="feedback-form container-flex">
+                                <formgroup>
+                                    <label for="form-name">Name</label>
+                                    <input type="text" name="name" id="form-name" placeholder="your name *" required>
+                                </formgroup>
+                                <formgroup>
+                                    <label for="form-email">Email</label>
+                                    <input type="email" name="email" id="form-email" placeholder="your email *" required>
+                                </formgroup>
+                                <formgroup>
+                                    <label for="form-date">Date</label>
+                                    <input type="text" name="date" id="form-date" placeholder="date *" required>
+                                </formgroup>
+                                <formgroup>
+                                    <label for="form-number">Party number</label>
+                                    <input type="number" name="number" id="form-number" placeholder="party number" min="1" max="100">   
+                                </formgroup>
                                 <button class="feedback-btn" type="button">Book now!</button>
                             </form>    
                         </div>
@@ -178,7 +188,7 @@
             </main>
 
             <footer class="wrapper main-footer">
-                <div class="container">
+                <div class="container container-flex-start">
                     <div class="about-us">
                         <h3 class="h3-white">About Us</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam distinctio, laudantium quod, culpa fugit perferendis a expedita fuga, voluptate soluta cupiditate beatae tempora est architecto.</p>
@@ -195,6 +205,7 @@
                         </div>
                     </div>
                     <div class="location">
+                        <h3 class="h3-white">Our Location</h3>
                         <div class="address">19th Paradise Street Sitia<br>
                         128 Meserole Avenue</div>
                         <div class="location-social">
@@ -204,6 +215,7 @@
                             <a href="" class="social-"></a>
                         </div>
                     </div>
+                    <div class="copyrights">Lambda. All Rights Reserved &copy;</div>
                 </div>     
             </footer>
 

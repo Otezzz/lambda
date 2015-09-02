@@ -14,6 +14,7 @@
 }
 .chef-photo {
     position: relative;
+    min-height: 170px;
     margin-top: 50px;
     
     img {
@@ -22,36 +23,9 @@
     }
 }
 .meal-photo {
+    width: 52%;
     margin-top: 50px;
     margin-right: 40px;
-}
-
-.h2-gold:after,
-.h2-white:after {
-    content: "";
-    display: block;
-    width: 247px;
-    height: 24px;
-    margin: 0 auto;
-    margin-top: 20px;
-}
-.h3-white:after {
-    content: "";
-    display: block;
-    width: 199px;
-    height: 19px;
-    margin: 0 auto;
-    margin-top: 40px;
-}
-
-.h2-gold:after {
-    background: url("../img/decor-h2-gold.png") no-repeat;
-}
-.h2-white:after {
-    background: url("../img/decor-h2.png") no-repeat;
-}
-.h3-white:after {
-    background: url("../img/decor-h3.png") no-repeat;
 }
 
 /* Секция 2 "Ингридиенты" */
@@ -155,18 +129,27 @@
 /*  */
 
 .feedback {
-    min-height: 610px;
+    min-height: 580px;
     padding-top: 100px;
+    padding-bottom: 30px;
     background: url("../img/section1-pattern2.png"),
                 url("../img/feedback-bg-shadow.png") no-repeat;
 }
+.food-photo1 {
+    margin-right: 30px;
+}
 .food-photo2 {
+    margin-right: 100px;
 }
 .food-photo1,
 .food-photo2 {
     width: 23%;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 10px 5px 10px 2px rgba(0,0,0,.4);
 }
 .feedback-block {
-    width: 38%;
+    width: 37%;
+    padding: 0 15px;
     text-align: center;
 }
